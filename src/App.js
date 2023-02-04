@@ -14,19 +14,19 @@ import {
 
 
 
-
 function App() {
 
   return <Router>
    <nav>
-    <Link className='link' to='/home'>Home</Link>
+   <Link to='/'className='link'>First Page </Link> 
+   
     <Link className='link' to='/shop'>Shop</Link>
     <Link className='link' to='/training'>Training</Link>
     <Link className='link' to='/about'>About</Link>
    </nav>
   
   <Routes>
-    <Route path='/home' element={<Home/>}/>
+  <Route path='/' element={<Home/>}/>
     <Route path='/shop' element={<Shop/>}/>
     <Route path='/training' element={<Training/>}/>
     <Route path='/about' element={<About/>}/>
