@@ -18,7 +18,7 @@ export const data = [
     },
 
     {
-        id: 1,
+        id: 2,
         name: 'Reebok Nano X2',
         image : reebok,
         source :'reebok.com',
@@ -29,7 +29,7 @@ export const data = [
     },
 
     {
-        id: 1,
+        id: 3,
         name: 'UNDER ARMOR 4',
         image : under,
         source :'underarmour.com',
@@ -39,7 +39,7 @@ export const data = [
         showMore: false,
     },
 
-    {    id: 1,
+    {    id: 4,
         name: 'MINIMUS TR',
         image : newbalance,
         source :'newbalance.com',
