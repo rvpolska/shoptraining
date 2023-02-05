@@ -1,10 +1,11 @@
 
+
 import { useState } from 'react';
 import './App.css';
 import Buttons from './Buttons';
 import Shop from './Shop';
 import { data } from './dataShop';
-import Buttons2 from './Buttons2';
+
 
 
 
@@ -19,17 +20,13 @@ function Shop2() {
     setShop(newClothes);
   }
   
-  const chosenClothes2 = (id) =>{
-    const newClothes2 = data.filter(element => element.id === id);
-    setShop(newClothes2);
-  }
 
   return(<div>
     <div className='container'>
     <h2>Choose your shoes</h2>
-    </div>  
-      <Buttons filteredClothes = {chosenClothes}/>
-      <Buttons2 filteredClothes2 = {chosenClothes2}/>
+    </div> 
+      <Buttons data ={data} setShop={setShop} filteredClothes = {chosenClothes}/>
+
       <Shop itemsForSale={shop}/>
     </div>
   )
